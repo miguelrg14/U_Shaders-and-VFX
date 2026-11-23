@@ -1,0 +1,112 @@
+name: Build
+
+# - Every push to main: WebGL build published on GitHub Pages (playable in the browser).
+# - Every tag v* (e.g. v1.0.0): Windows 64-bit build attached to a GitHub Release.
+# - Can also be started by hand from the Actions tab.
+#
+# Required repository secrets (Settings > Secrets and variables > Actions):
+#   UNITY_LICENSE, UNITY_EMAIL, UNITY_PASSWORD
+# Required once: Settings > Pages > Source = "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BUILD_NAME: ShaderNotes
+
+jobs:
+  webgl:
+    name: WebGL build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-WebGL-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: Library-WebGL-
+
+      - uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: WebGL
+          buildName: ${{ env.BUILD_NAME }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/WebGL/${{ env.BUILD_NAME }}
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: webgl
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  windows:
+    name: Windows build
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Win64-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: Library-Win64-
+
+      - uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: StandaloneWindows64
+          buildName: ${{ env.BUILD_NAME }}
+
+      - name: Zip build
+        run: |
+          cd build/StandaloneWindows64
+          zip -r "../../${BUILD_NAME}-Windows64.zip" .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.BUILD_NAME }}-Windows64
+          path: ${{ env.BUILD_NAME }}-Windows64.zip
+
+  release:
+    name: GitHub Release
+    needs: windows
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ShaderNotes-Windows64
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: ShaderNotes-Windows64.zip
+          generate_release_notes: true

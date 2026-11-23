@@ -23,7 +23,13 @@ namespace ShaderStudy
             for (int i = 0; i < count; i++)
             {
                 string path = SceneUtility.GetScenePathByBuildIndex(i);
-                sceneNames[i] = Path.GetFileNameWithoutExtension(path).Replace('_', ' ').Replace('-', ' ');
+                string sceneName = Path.GetFileNameWithoutExtension(path);
+                sceneNames[i] = sceneName.Replace('_', ' ').Replace('-', ' ');
+#if UNITY_WEBGL
+                // WebGL has no geometry or tessellation shaders: these demos only work in the desktop build.
+                if (sceneName.StartsWith("45_") || sceneName.StartsWith("46_") || sceneName.StartsWith("47_") || sceneName.StartsWith("48_"))
+                    sceneNames[i] += "  (desktop only)";
+#endif
             }
         }
 

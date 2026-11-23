@@ -8,6 +8,9 @@ Notes and experiments on shaders, image effects and VFX techniques, each one wit
 materials and a README.
 
 - **Unity:** 6000.6.8f1, **Built-in Render Pipeline** (surface shaders, `GrabPass`, `OnRenderImage`).
+- **Play it:** [in the browser](https://miguelrg14.github.io/U_Shaders-and-VFX/) (demos 45-48 need geometry/tessellation
+  shaders, so they only work in the desktop build) or download the Windows build from
+  [Releases](https://github.com/miguelrg14/U_Shaders-and-VFX/releases).
 - **Start here:** open `Assets/ShaderNotes/_Common/Scenes/00_Menu.unity` and press Play. All demos are in the
   Build Settings, so you can jump between them: **N / B** next / previous, **M** menu, **H** hide the info panel,
   right mouse to orbit, wheel to zoom.

@@ -11,3 +11,5 @@ PlayerSettings:
   defaultScreenHeight: 900
   m_ActiveColorSpace: 0
   activeInputHandler: 0
+  webGLCompressionFormat: 2
+  webGLDecompressionFallback: 0
