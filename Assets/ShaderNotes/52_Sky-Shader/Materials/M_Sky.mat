@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Sky
+  m_Shader: {fileID: 4800000, guid: 454f0904c53f38ce0eb949fa5572f569, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Stars:
+        m_Texture: {fileID: 2800000, guid: dc72d1215335b5701eafaed32f7577b3, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _CloudsTexture:
+        m_Texture: {fileID: 2800000, guid: a8171f430d0858f0bd18fee8a6826efd, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _MiddleSmoothness: 0.8
+    - _MiddleOffset: 0
+    - _TopSmoothness: 0.6
+    - _TopOffset: 0
+    - _SunSize: 0.05
+    - _MoonSize: 0.07
+    - _MoonPhase: 0.3
+    - _StarsIntensity: 3
+    - _CloudsThreshold: -0.15
+    - _CloudsSmoothness: 0.15
+    - _SunCloudIntensity: 0.5
+    - _PanningSpeedX: 0.004
+    - _PanningSpeedY: 0
+    m_Colors:
+    - _ColorTop: {r: 0.2, g: 0.45, b: 0.85, a: 1}
+    - _ColorMiddle: {r: 0.6, g: 0.8, b: 1, a: 1}
+    - _ColorBottom: {r: 0.35, g: 0.35, b: 0.4, a: 1}
+    - _SunColor: {r: 3, g: 2.6, b: 2, a: 1}
+    - _MoonColor: {r: 1.5, g: 1.5, b: 1.6, a: 1}
+    - _CloudsColor: {r: 1, g: 1, b: 1, a: 0.9}
+  m_BuildTextureStacks: []

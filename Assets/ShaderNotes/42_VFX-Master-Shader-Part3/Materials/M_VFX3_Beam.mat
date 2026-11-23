@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_VFX3_Beam
+  m_Shader: {fileID: 4800000, guid: 1b05df1b9dd6b6ed64e97bb192f7b2ae, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - RECT_MASK
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4ae430e8db8baec300a5d6b380ef03e3, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _GradientMap:
+        m_Texture: {fileID: 2800000, guid: d0ee70c0d4ae9f99caa8b4fd106aa9e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplacementGuide:
+        m_Texture: {fileID: 2800000, guid: 4ecf5a87b605ac3f596e4cbc07bf07d7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _SecondTex: 0
+    - _Contrast: 1.4
+    - _Power: 1.2
+    - _Cutoff: 0
+    - _CutoffSoftness: 0.3
+    - _BurnSize: 0
+    - _SoftBlend: 0
+    - _IntersectionThresholdMax: 2
+    - _VertexOffset: 0
+    - _VertexOffsetAmount: 0
+    - _DisplacementAmount: 0.05
+    - _Culling: 0
+    - _Banding: 0
+    - _Bands: 3
+    - _PolarCoords: 0
+    - _CircleMask: 0
+    - _OuterRadius: 0.5
+    - _InnerRadius: 0
+    - _Smoothness: 0.2
+    - _RectMask: 1
+    - _RectWidth: 0.9
+    - _RectHeight: 1
+    - _RectMaskCutoff: 0.6
+    - _RectSmoothness: 0.4
+    m_Colors:
+    - _Color: {r: 1.5, g: 1.8, b: 1.5, a: 1}
+    - _PanningSpeed: {r: 0, g: -1.2, b: 0, a: -0.6}
+    - _BurnCol: {r: 1, g: 1, b: 1, a: 1}
+    - _SecondaryPanningSpeed: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

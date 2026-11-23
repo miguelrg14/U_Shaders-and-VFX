@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ShaderNotes/_Common/Scenes/00_Menu.unity
+    guid: 1b818c4e97281d6c6e15777cc036f155
+  - enabled: 1
+    path: Assets/ShaderNotes/01_Introduction-to-Image-Effects/01_Introduction-to-Image-Effects.unity
+    guid: 92a1952c72ff9c67f8e301dffce6e815
+  - enabled: 1
+    path: Assets/ShaderNotes/02_Simple-Masks/02_Simple-Masks.unity
+    guid: ad03dda4dda31822e544c92205cada0f
+  - enabled: 1
+    path: Assets/ShaderNotes/03_Custom-Masks-Disc/03_Custom-Masks-Disc.unity
+    guid: 89a373833be5ce64e20915f3f7be2e1f
+  - enabled: 1
+    path: Assets/ShaderNotes/04_Custom-Masks-Ring/04_Custom-Masks-Ring.unity
+    guid: 64fe7d473e0e14e79f13d766e32a302a
+  - enabled: 1
+    path: Assets/ShaderNotes/05_Random-Stripes-Mask/05_Random-Stripes-Mask.unity
+    guid: b17949fbf58896705e23172769dc5255
+  - enabled: 1
+    path: Assets/ShaderNotes/06_Simple-Displacement/06_Simple-Displacement.unity
+    guid: a01e4ef34d27795943dfee12c8576010
+  - enabled: 1
+    path: Assets/ShaderNotes/07_Custom-Wavy-Displacement/07_Custom-Wavy-Displacement.unity
+    guid: 73373f3d03bd172edeceeda28b31d940
+  - enabled: 1
+    path: Assets/ShaderNotes/08_Waving-Displacement/08_Waving-Displacement.unity
+    guid: 124c290a5feaa8b7fb05bf50910db184
+  - enabled: 1
+    path: Assets/ShaderNotes/09_Chromatic-Aberration/09_Chromatic-Aberration.unity
+    guid: f57b0d12ae8d906c0102d9d11541b5ad
+  - enabled: 1
+    path: Assets/ShaderNotes/10_Night-Time/10_Night-Time.unity
+    guid: 48cc7207504d939c1c674742e120d9b5
+  - enabled: 1
+    path: Assets/ShaderNotes/11_Glitch-Image-Effect/11_Glitch-Image-Effect.unity
+    guid: 0fd9a8e0796337e53d8f97168dbe091a
+  - enabled: 1
+    path: Assets/ShaderNotes/12_Shockwave/12_Shockwave.unity
+    guid: 9afb76a5153a196e05d16503dc2a8224
+  - enabled: 1
+    path: Assets/ShaderNotes/13_GrabPass/13_GrabPass.unity
+    guid: 2b79ceed77a52ae691fd67e5b6397460
+  - enabled: 1
+    path: Assets/ShaderNotes/14_Dissolve/14_Dissolve.unity
+    guid: 8da9e00fe952511ac97f8ec555414d8e
+  - enabled: 1
+    path: Assets/ShaderNotes/15_Stencil-Antichamber/15_Stencil-Antichamber.unity
+    guid: 0180b17546cce3a126572807fd23b6d5
+  - enabled: 1
+    path: Assets/ShaderNotes/16_ShaderBits-World-Screen-Space/16_ShaderBits-World-Screen-Space.unity
+    guid: e2817b4304531e372a3e9c67d5e30f62
+  - enabled: 1
+    path: Assets/ShaderNotes/17_ShaderBits-Distance-ViewDir-Normals/17_ShaderBits-Distance-ViewDir-Normals.unity
+    guid: 145fb7eb14a75f5ff930131e1515fdbb
+  - enabled: 1
+    path: Assets/ShaderNotes/18_Firewatch-Fog/18_Firewatch-Fog.unity
+    guid: cf41206502a37b09e425f023cd23466d
+  - enabled: 1
+    path: Assets/ShaderNotes/19_Abzu-Portal-Cards/19_Abzu-Portal-Cards.unity
+    guid: e7972a98e69d83b88965f53bdf599b22
+  - enabled: 1
+    path: Assets/ShaderNotes/20_BLUK-Visuals/20_BLUK-Visuals.unity
+    guid: ccce1464cb3a7296d853b2767458d3de
+  - enabled: 1
+    path: Assets/ShaderNotes/21_Directional-Coloring/21_Directional-Coloring.unity
+    guid: 62577aa854cabdc20707d46d23532906
+  - enabled: 1
+    path: Assets/ShaderNotes/22_Snow/22_Snow.unity
+    guid: d01b09b018e58d8bdb5154cb845b7128
+  - enabled: 1
+    path: Assets/ShaderNotes/23_ShaderBits-Depth-Textures/23_ShaderBits-Depth-Textures.unity
+    guid: 89b49df233841d286f988acaab267267
+  - enabled: 1
+    path: Assets/ShaderNotes/24_Edge-Detection/24_Edge-Detection.unity
+    guid: 6930b2e5ec608c32b6123aa7af0e0b73
+  - enabled: 1
+    path: Assets/ShaderNotes/25_Gradient-Mapper/25_Gradient-Mapper.unity
+    guid: 0d25fb8170eae9020e5426256b163c6b
+  - enabled: 1
+    path: Assets/ShaderNotes/26_Directional-Dissolve/26_Directional-Dissolve.unity
+    guid: cafdccd2e7075fc6ced1424098ba9967
+  - enabled: 1
+    path: Assets/ShaderNotes/27_Spherical-Mask-Dissolve/27_Spherical-Mask-Dissolve.unity
+    guid: 7e538ed23069c731638fef12cf738e35
+  - enabled: 1
+    path: Assets/ShaderNotes/28_Unlit-Waterfall/28_Unlit-Waterfall.unity
+    guid: fa3c1177591ab00d45d61f4676c5f722
+  - enabled: 1
+    path: Assets/ShaderNotes/29_Vertical-Fog/29_Vertical-Fog.unity
+    guid: b9592004ca1a9fd1098c2e6e6d093204
+  - enabled: 1
+    path: Assets/ShaderNotes/30_Teleportation-Dissolve/30_Teleportation-Dissolve.unity
+    guid: 058229593ca6942bd5009a0b12ec324f
+  - enabled: 1
+    path: Assets/ShaderNotes/31_Radial-Blur/31_Radial-Blur.unity
+    guid: 5dd180231983c3c0bf7931ffe3bb4d84
+  - enabled: 1
+    path: Assets/ShaderNotes/32_Spherical-Mask-PostProcess/32_Spherical-Mask-PostProcess.unity
+    guid: 8f38549c37f44e8a28a87d518876211b
+  - enabled: 1
+    path: Assets/ShaderNotes/33_Butterflies-and-Fish/33_Butterflies-and-Fish.unity
+    guid: 7e08f55f0416f3569dd2ba08a5c36d43
+  - enabled: 1
+    path: Assets/ShaderNotes/34_Surface-Shader-Lighting/34_Surface-Shader-Lighting.unity
+    guid: a06410e522828b3a257d5e7b28306306
+  - enabled: 1
+    path: Assets/ShaderNotes/35_LUT-Color-Grading/35_LUT-Color-Grading.unity
+    guid: ecf47958084a2645de847a8b554e1b6c
+  - enabled: 1
+    path: Assets/ShaderNotes/36_SDF-Icons/36_SDF-Icons.unity
+    guid: 743d0fc47ca5b81a123a35851a8cec39
+  - enabled: 1
+    path: Assets/ShaderNotes/37_Parallax-Part1/37_Parallax-Part1.unity
+    guid: 6f01f08d1262ebc8325654b62e1b8e47
+  - enabled: 1
+    path: Assets/ShaderNotes/38_Parallax-Part2-Layered/38_Parallax-Part2-Layered.unity
+    guid: 5e770cc65ead5c3e2a6fa70681afd180
+  - enabled: 1
+    path: Assets/ShaderNotes/39_Interior-Mapping/39_Interior-Mapping.unity
+    guid: 34af82fc32f4b43cf234296fe9001818
+  - enabled: 1
+    path: Assets/ShaderNotes/40_VFX-Master-Shader-Part1/40_VFX-Master-Shader-Part1.unity
+    guid: 545b28ce9f392ec8d6bae42111d9e11a
+  - enabled: 1
+    path: Assets/ShaderNotes/41_VFX-Master-Shader-Part2/41_VFX-Master-Shader-Part2.unity
+    guid: 70b1da105880cc2d442ab043fb459044
+  - enabled: 1
+    path: Assets/ShaderNotes/42_VFX-Master-Shader-Part3/42_VFX-Master-Shader-Part3.unity
+    guid: fcb48dbfe0e1881980b1e1812d0ea387
+  - enabled: 1
+    path: Assets/ShaderNotes/43_GrabPass-Distortion/43_GrabPass-Distortion.unity
+    guid: b49295ae7f956219db36e54dba594150
+  - enabled: 1
+    path: Assets/ShaderNotes/44_Subsurface-Scattering/44_Subsurface-Scattering.unity
+    guid: e20f3c27eab33aae04846be8059128c8
+  - enabled: 1
+    path: Assets/ShaderNotes/45_Water-Shader/45_Water-Shader.unity
+    guid: 4f68e038871650deadc91bb26811e84a
+  - enabled: 1
+    path: Assets/ShaderNotes/46_Geometry-Shaders/46_Geometry-Shaders.unity
+    guid: 4e5e502f232c7d3a791c27f1b879f795
+  - enabled: 1
+    path: Assets/ShaderNotes/47_Grass-Shader-Part1/47_Grass-Shader-Part1.unity
+    guid: 86825df3e69105c9bb3a70cc2acef5dd
+  - enabled: 1
+    path: Assets/ShaderNotes/48_Grass-Shader-Part2/48_Grass-Shader-Part2.unity
+    guid: 403bf8b25e6a2ec2b484834fe031afed
+  - enabled: 1
+    path: Assets/ShaderNotes/49_Cel-Shading/49_Cel-Shading.unity
+    guid: f7432a8405f15e83064b9d16616ad0b5
+  - enabled: 1
+    path: Assets/ShaderNotes/50_Cliff-Terrain/50_Cliff-Terrain.unity
+    guid: 4ed3a002e322bf247d60f2318666456a
+  - enabled: 1
+    path: Assets/ShaderNotes/51_Stylized-Water/51_Stylized-Water.unity
+    guid: b25044b4106cb1dd09d44f9cda4dff08
+  - enabled: 1
+    path: Assets/ShaderNotes/52_Sky-Shader/52_Sky-Shader.unity
+    guid: b14870d706eefd20ff5b557008b9d11c
+  m_configObjects: {}

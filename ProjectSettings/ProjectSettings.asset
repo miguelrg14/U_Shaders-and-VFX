@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 28
+  productGUID: ea37ed5704e15e845fea6628a52ff03f
+  companyName: Miguel Rodriguez Gallego
+  productName: U_Shaders-and-VFX
+  defaultScreenWidth: 1600
+  defaultScreenHeight: 900
+  m_ActiveColorSpace: 0
+  activeInputHandler: 0

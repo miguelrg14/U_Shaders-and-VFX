@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Water
+  m_Shader: {fileID: 4800000, guid: 27a932947a2f311fe5b8f0a8a77d6a76, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GradientMap:
+        m_Texture: {fileID: 2800000, guid: 5005ee36dcac01ca9eb0927ade3edda6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTextureA:
+        m_Texture: {fileID: 2800000, guid: 4ae430e8db8baec300a5d6b380ef03e3, type: 3}
+        m_Scale: {x: 0.05, y: 0.05}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTextureB:
+        m_Texture: {fileID: 2800000, guid: a8171f430d0858f0bd18fee8a6826efd, type: 3}
+        m_Scale: {x: 0.08, y: 0.08}
+        m_Offset: {x: 0, y: 0}
+    - _DisplacementGuide:
+        m_Texture: {fileID: 2800000, guid: 4ecf5a87b605ac3f596e4cbc07bf07d7, type: 3}
+        m_Scale: {x: 0.05, y: 0.05}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: e509e1d323b4de634a54a68d170b2c76, type: 3}
+        m_Scale: {x: 0.3, y: 0.3}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Smoothness: 0.9
+    - _ShoreColorThreshold: 0.02
+    - _VectorLength: 0.1
+    - _MaxTessellationDistance: 60
+    - _Tessellation: 16
+    - _OffsetAmount: 0.6
+    - _MinOffset: 0.2
+    - _ShoreIntersectionThreshold: 2
+    - _TransparencyIntersectionThresholdMin: 1
+    - _TransparencyIntersectionThresholdMax: 2.5
+    m_Colors:
+    - _ShoreColor: {r: 0.85, g: 0.95, b: 1, a: 0.4}
+    - _Emission: {r: 0.35, g: 0.35, b: 0.35, a: 1}
+    - _NoiseAProperties: {r: 0.03, g: 0.02, b: 1.5, a: 1}
+    - _NoiseBProperties: {r: -0.02, g: 0.04, b: 1.2, a: 1}
+    - _DisplacementProperties: {r: 0.02, g: 0.02, b: 0.1, a: 0}
+    - _FoamProperties: {r: 0.1, g: 0.1, b: 0.62, a: 0.08}
+    - _FoamIntersectionProperties: {r: 1.2, g: 0.6, b: 0.2, a: 0.3}
+  m_BuildTextureStacks: []

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_StylizedWater
+  m_Shader: {fileID: 4800000, guid: f49dd3a367e4148808775da61294423b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalA:
+        m_Texture: {fileID: 2800000, guid: 05c005ba8bbc2a7de63b1219a538429f, type: 3}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalB:
+        m_Texture: {fileID: 2800000, guid: 05c005ba8bbc2a7de63b1219a538429f, type: 3}
+        m_Scale: {x: 0.15, y: 0.15}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: cce8da09ad14afbd8a3dc59e973ada82, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _RenderTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _IntersectionThreshold: 0.6
+    - _FogThreshold: 3
+    - _FoamThreshold: 0.7
+    - _NormalStrength: 0.4
+    - _FoamTextureSpeedX: 0.05
+    - _FoamTextureSpeedY: 0.03
+    - _FoamLinesSpeed: 0.3
+    - _FoamIntensity: 1.2
+    - _Glossiness: 0.9
+    - _FresnelPower: 2
+    m_Colors:
+    - _Color: {r: 0.25, g: 0.75, b: 0.85, a: 0.55}
+    - _FogColor: {r: 0.05, g: 0.28, b: 0.45, a: 0.95}
+    - _IntersectionColor: {r: 0.65, g: 1, b: 1, a: 0.7}
+    - _NormalPanningSpeeds: {r: 0.03, g: 0.02, b: -0.02, a: 0.03}
+  m_BuildTextureStacks: []
