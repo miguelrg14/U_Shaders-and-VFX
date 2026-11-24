@@ -1,0 +1,4 @@
+# Effect list used by Tools > VFX Notes > 2. Create missing effect scenes
+# One effect per line:  NN | Folder-Name | Title
+# Example:
+# 01 | Fire-Ball | Fire ball
